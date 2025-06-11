@@ -12,7 +12,7 @@ print_current_theme() {
 }
 
 # --- Theme Switch Function (Light Only) ---
-    () {
+set_light_theme() {
     gsettings set org.gnome.desktop.interface gtk-theme "transparent-Light"
     gsettings set org.gnome.shell.extensions.user-theme name "transparent-Light"
     gsettings set org.gnome.desktop.interface icon-theme "Papirus-Light"
@@ -98,7 +98,7 @@ sudo apt update
 sudo apt install -y papirus-icon-theme
 
 # Apply the light theme with new icons
-    set_light_theme
+set_light_theme
 
 # --- Useful GNOME Extensions & Widgets ---
 sudo apt install -y gnome-shell-extension-prefs
